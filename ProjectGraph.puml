@@ -1,0 +1,90 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class GeoLocation{
++double x;
++double y;
++double z;
+
+double distance()
+}
+
+class NodeData{
++int key;
++GeoLocation
++Map<Integer, EdgeData> EdgesIn;
++Map<Integer,EdgeData> EdgesOut;
+
+int getKey()
+GeoLocation getLocation()
+setLocation(GeoLocation p)
+int getTag()
+void setTag(int t)
+}
+
+class EdgeData{
++int src;
++int dest;
++double w;
+
+int getSrc()
+int getDest()
+double getWeight()
+}
+
+class DirectedWeightedGraph{
+HashMap<Integer, NodeData> nodes;
+HashMap<Vector<Integer>, EdgeData> edges;
+HashMap<Integer, frTo> edgesOfNode;
+int Mc;
+
+NodeData getNode()
+EdgeData getEdge()
+void addNode()
+void connect()
+nodeIter()
+edgeIter()
+edgeIter(int node_id)
+NodeData removeNode()
+EdgeData removeEdge()
+int nodeSize()
+int edgeSize()
+int getMC()
+}
+
+class DirectedWeightedGraphAlgorithms{
++DirectedWeightedGraph graph;
++public HashMap<Integer, dijkstra> dijkstra;
+void init();
+boolean isConnected()
+double shortestPathDist()
+List<NodeData> shortestPath()
+NodeData center()
+class dijkstra()
+List<NodeData> tsp()
++boolean load()
++boolean save()
+}
+
+class Ex2{
+DirectedWeightedGraph;
+
+DirectedWeightedGraph getGrapg()
+DirectedWeightedGraphAlgorithms getGrapgAlgo()
+runGUI()
+myDirectedWeightedGraph readGRaphFromJson()
+}
+
+
+
+NodeData ---> GeoLocation
+DirectedWeightedGraph ---> NodeData
+DirectedWeightedGraph---> EdgeData
+DirectedWeightedGraph ---> DirectedWeightedGraphAlgorithms
+Ex2 ---|> DirectedWeightedGraph
+Ex2 ---|> DirectedWeightedGraphAlgorithms
+
+
+
+
+@enduml
