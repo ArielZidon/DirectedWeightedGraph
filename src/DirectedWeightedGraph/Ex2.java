@@ -88,13 +88,8 @@ public class Ex2 {
         DirectedWeightedGraphAlgorithms a =getGrapgAlgo("data/G1.json");
         System.out.println(a.getGraph());
         System.out.println(a.isConnected());
-//        a.getGraph().removeNode(2);
-//        a.getGraph().removeNode(0);
-//        System.out.println(a.getGraph());
-//        System.out.println(a.isConnected());
-//        NodeData g = new myNodeData(88,"1,2,3");
-//        a.getGraph().addNode(g);
-//        System.out.println(a.getGraph());
+        a.getGraph().removeNode(2);
+        System.out.println(a.isConnected());
         JPanel panel = new Gui.MyJpanel(getGrapgAlgo("data/G1.json").getGraph());
         new Gui.MyJframe(a).add(panel);
     }

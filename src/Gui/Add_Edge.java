@@ -1,7 +1,3 @@
-package Gui;
-
-import api.DirectedWeightedGraph;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -45,11 +41,11 @@ public class Add_Edge extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String s = e.getActionCommand();
         if (s.equals("Add")) {
-            closeWindow();
+            action();
         }
     }
 
-    private void closeWindow() {
+    private void action() {
         setVisible(false);
         MyGraph.connect(Integer.parseInt(Src.getText()), Integer.parseInt(Dest.getText()), Double.parseDouble(Weight.getText()));
         JOptionPane.showMessageDialog(new JFrame(), "Add Success", "Add Edge", JOptionPane.DEFAULT_OPTION);
