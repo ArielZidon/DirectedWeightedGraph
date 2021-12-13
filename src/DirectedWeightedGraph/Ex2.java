@@ -85,6 +85,7 @@ public class Ex2 {
         return pick;
     }
     public static void main(String[] args) {
+        runGUI(args[0]);
         DirectedWeightedGraphAlgorithms a =getGrapgAlgo("data/G1.json");
         System.out.println(a.getGraph());
         System.out.println(a.isConnected());
