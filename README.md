@@ -82,6 +82,6 @@ The class takes all the algorithms and functions and displays them on the screen
 #  How to run the project
 for the jar file-
 we need to go into the terminal of the project. 
-when we get there we write(or other json file): 
+when we get there we write the file that we want to run: 
 <img width="401" alt="Screenshot 2021-12-13 235037" src="https://user-images.githubusercontent.com/92378800/145894554-041c09aa-504a-4eb6-97f8-726d01551202.png">
 
