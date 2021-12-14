@@ -54,7 +54,7 @@ public class Add_Node extends JFrame implements ActionListener {
     }
     private void action() {
         setVisible(false);
-     //   myNodeData node = new myNodeData( 88, "35.201540221146180002,32.105944858823430004,0.0");
+        //   myNodeData node = new myNodeData( 88, "35.201540221146180002,32.105944858823430004,0.0");
         String str = in_x.getText();
         str = str +","+in_y.getText();
         str = str + ",0.0";

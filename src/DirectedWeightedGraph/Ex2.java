@@ -8,7 +8,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import javax.swing.*;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -80,19 +79,14 @@ public class Ex2 {
             int src = Integer.parseInt(temp.get("src").toString());
             int dest = Integer.parseInt(temp.get("dest").toString());
             double w = Double.parseDouble(temp.get("w").toString());
-            pick.connect(src, dest, w);
-        }
+            pick.connect(src, dest, w); }
         return pick;
     }
     public static void main(String[] args) {
         runGUI(args[0]);
-        DirectedWeightedGraphAlgorithms a =getGrapgAlgo("data/G1.json");
-        System.out.println(a.getGraph());
-        System.out.println(a.isConnected());
-        a.getGraph().removeNode(2);
-        System.out.println(a.isConnected());
-        JPanel panel = new Gui.MyJpanel(getGrapgAlgo("data/G1.json").getGraph());
-        new Gui.MyJframe(a).add(panel);
+//        DirectedWeightedGraphAlgorithms a =getGrapgAlgo("data/G2.json");
+//        JPanel panel = new Gui.MyJpanel(getGrapgAlgo("data/G2.json").getGraph());
+//        new Gui.MyJframe(a).add(panel);
     }
     }
 
