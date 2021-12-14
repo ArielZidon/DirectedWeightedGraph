@@ -80,3 +80,9 @@ The class takes all the algorithms and functions and displays them on the screen
 
 
 #  How to run the project
+for the jar file-
+we need to go into the terminal of the project. 
+when we get there we write the file that we want to run: 
+![image](https://user-images.githubusercontent.com/93542763/145984779-4c3bdf16-b198-4b80-8de5-1239a9a88190.png)
+
+
